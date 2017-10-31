@@ -111,7 +111,6 @@ class FlowNetwork:
 
 
 def max_flow(graph_nodes):
-    plt.close()
     fn = FlowNetwork()
     nodes = set([int(x) for x, y, z in graph_nodes] + [int(y) for x, y, z in graph_nodes])
     start = str(min(nodes))
